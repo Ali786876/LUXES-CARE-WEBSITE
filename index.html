@@ -3,24 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <title>LUXES CARE | Gentle Foaming Facewash</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 400px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    h1 {
+      font-size: 22px;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .desc {
+      font-size: 14px;
+      color: #444;
+      margin: 15px 0;
+      line-height: 1.6;
+    }
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2c7;
+      text-align: center;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      background: #007bff;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+    .links {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007bff;
+    }
+    .note {
+      font-size: 13px;
+      text-align: center;
+      margin-top: 8px;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <div class="container">
+    <img src="https://via.placeholder.com/400x400?text=Facewash+Image" alt="LUXES CARE Facewash">
     <h1>LUXES CARE Gentle Foaming Facewash</h1>
-  </header>
-  <main>
-    <img src="images/product-ai.jpg" alt="Facewash Product">
-    <p>Experience the ultimate skin refreshment with LUXES CARE Gentle Foaming Facewash – formulated for deep cleansing, oil control, and a naturally glowing face. Perfect for all skin types, enriched with natural extracts. Comes with a free face-friendly soap.</p>
-    <h2>₹350 (with Free Face‑Friendly Soap)</h2>
-    <button disabled>Buy Now (Set up Razorpay)</button>
-    <p>(Payment gateway integration pending)</p>
-  </main>
-  <footer>
-    <nav>
+    <p class="desc">
+      Experience the ultimate skin refreshment with LUXES CARE Gentle Foaming Facewash – formulated for deep cleansing, oil control, and a naturally glowing face. Perfect for all skin types, enriched with natural extracts. Comes with a free face-friendly soap.
+    </p>
+    <p class="price">₹350 (with Free Face-Friendly Soap)</p>
+    <button class="btn" disabled>Buy Now (Coming Soon)</button>
+    <p class="note">(Payment gateway integration pending)</p>
+    <div class="links">
       <a href="about.html">About Us</a> |
       <a href="contact.html">Contact Us</a>
-    </nav>
-  </footer>
+    </div>
+  </div>
 </body>
 </html>
