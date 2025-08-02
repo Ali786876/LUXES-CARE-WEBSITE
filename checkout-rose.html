@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout - Rose Facewash</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+    .form-container {
+      max-width: 400px;
+      margin: auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    input, textarea, button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px;
+      font-size: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Enter Your Details</h2>
+    <form action="https://formsubmit.co/luxescare@gmail.com" method="POST">
+      <input type="hidden" name="_redirect" value="https://razorpay.me/@luxescare?amount=54900&description=Rose%20Facewash">
+      <input type="text" name="Name" placeholder="Full Name" required />
+      <input type="tel" name="Mobile" placeholder="Mobile Number" required />
+      <textarea name="Address" placeholder="Full Address" rows="4" required></textarea>
+      <input type="hidden" name="Product" value="Rose Facewash" />
+      <button type="submit">Proceed to Pay ₹549</button>
+    </form>
+  </div>
+</body>
+</html>
