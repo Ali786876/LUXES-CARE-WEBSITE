@@ -174,7 +174,12 @@
     </p>
     <div class="links">
       <a href="about.html">About Us</a> |
-      <a href="mailto:luxescare@gmail.com">Contact Us</a>
+      <!-- 👇 Paste this in place of old Contact Us link -->
+<a href="#" onclick="toggleContact()">Contact Us</a>
+<div id="contact-dropdown" style="display: none; background: white; padding: 10px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: absolute; margin-top: 5px;">
+  <a href="mailto:luxescare@gmail.com" style="display: block; margin-bottom: 8px;">📧 Email: luxescare@gmail.com</a>
+  <a href="https://instagram.com/luxes_care" target="_blank" style="display: block;">📷 Instagram: @luxes_care</a>
+</div>
     </div>
   </div>
   <script>
