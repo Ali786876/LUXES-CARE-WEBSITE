@@ -65,6 +65,50 @@
       text-decoration: none;
       color: #007bff;
     }
+    <style>
+  .menu-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+  }
+
+  .menu-toggle {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+
+  .menu-links a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    font-weight: 500;
+  }
+
+  .menu-links a:hover {
+    background-color: #f0f0f0;
+  }
+
+  .menu-links a:last-child {
+    border-bottom: none;
+  }
+</style>
   </style>
 </head>
 <body>
