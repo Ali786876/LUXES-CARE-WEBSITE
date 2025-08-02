@@ -49,9 +49,20 @@
       <input type="text" name="Name" placeholder="Full Name" required />
       <input type="tel" name="Phone" placeholder="Mobile Number" required />
       <textarea name="Address" placeholder="Full Address with Pincode" required></textarea>
-      <input type="hidden" name="_next" value="https://razorpay.me/@luxescare">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_autoresponse" value="Thank you! We’ve received your order.">
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" name="_next" value="https://luxescare.shop/thankyou.html">
       <button type="submit">Place Order & Pay ₹349</button>
     </form>
   </div>
+
+  <script>
+    function redirectToRazorpay() {
+      setTimeout(function () {
+        window.location.href = "https://razorpay.me/@luxescare";
+      }, 500); // slight delay to ensure form submits first
+    }
+  </script>
 </body>
 </html>
