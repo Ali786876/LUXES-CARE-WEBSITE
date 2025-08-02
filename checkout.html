@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - LUXESCARE</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+    .form-box {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-box">
+    <h2>Order Checkout</h2>
+    <form action="https://formsubmit.co/luxescare@gmail.com" method="POST" onsubmit="redirectToRazorpay()">
+      <input type="text" name="Name" placeholder="Full Name" required />
+      <input type="tel" name="Phone" placeholder="Mobile Number" required />
+      <textarea name="Address" placeholder="Full Address with Pincode" required></textarea>
+      <input type="hidden" name="_next" value="https://razorpay.me/@luxescare">
+      <button type="submit">Place Order & Pay ₹349</button>
+    </form>
+  </div>
+</body>
+</html>
