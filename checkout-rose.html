@@ -1,66 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
   <title>Checkout - Rose Facewash</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #f9f9f9;
-      padding: 20px;
+      background-color: #f2f2f2;
+      padding: 30px;
     }
-    .form-container {
-      max-width: 400px;
+    .box {
+      max-width: 420px;
+      background: white;
       margin: auto;
-      background: #fff;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+      text-align: center;
     }
-    input, textarea, button {
-      width: 100%;
-      margin: 10px 0;
-      padding: 12px;
-      font-size: 15px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
+    h2 {
+      margin-bottom: 20px;
     }
-    button {
-      background: #007bff;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #0056b3;
+    .note {
+      color: #555;
+      font-size: 14px;
+      margin-bottom: 25px;
     }
   </style>
 </head>
 <body>
-  <div class="form-container">
-    <h2>Enter Your Details</h2>
-    <form action="https://formsubmit.co/luxescare@gmail.com" method="POST" onsubmit="redirectToPayment()">
-      <input type="text" name="Name" placeholder="Full Name" required />
-      <input type="tel" name="Mobile" placeholder="Mobile Number" required />
-      <textarea name="Address" placeholder="Full Address" rows="4" required></textarea>
+  <div class="box">
+    <h2>Buy LUXESCARE Rose Facewash</h2>
+    <p class="note">Includes free face-friendly soap · ₹549 only</p>
 
-      <!-- Hidden inputs -->
-      <input type="hidden" name="Product" value="Rose Facewash" />
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="box">
-      <input type="hidden" name="_autoresponse" value="Thank you for your order! We’ll contact you shortly.">
-      <input type="hidden" name="_next" value="https://luxescare.shop/thankyou.html">
-
-      <button type="submit">Proceed to Pay ₹549</button>
+    <!-- Razorpay Button Embed Starts -->
+    <form>
+      <script src="https://checkout.razorpay.com/v1/payment-button.js"
+        data-payment_button_id="pl_R0p5rId6BCuHTk" async>
+      </script>
     </form>
+    <!-- Razorpay Button Embed Ends -->
   </div>
-
-  <script>
-    function redirectToPayment() {
-      setTimeout(function () {
-        window.location.href = "https://razorpay.me/@luxescare?amount=54900&description=Rose%20Facewash";
-      }, 500);
-    }
-  </script>
 </body>
 </html>
